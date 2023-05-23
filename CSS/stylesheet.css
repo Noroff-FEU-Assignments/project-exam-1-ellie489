@@ -6,7 +6,9 @@
     --padding: 20px;
     --dark: #081A1D;
 }
-
+* {
+    box-sizing: border-box;
+}
 body {
     padding: 0;
     margin: 0;
@@ -143,9 +145,121 @@ nav a {
     
 }
 
+/* Slider */
+
+.slider-wrapper {
+    margin: 1rem;
+    padding-top: 200px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .slides-container {
+    height: 500px;
+    width: 100%;
+    display: flex;
+    overflow: scroll;
+    scroll-behavior: smooth;
+  }
+  
+  .slide {
+    width: 100%;
+    height: 100%;
+    flex: 1 0 100%;
+  }
+  
+.slider-wrapper {
+    width: 100%;
+    max-width: 100vw;
+}
+.slide {
+    max-width: 400px;
+    max-height: 90vh;
+    margin: 0px 20px;
+}
+
+.slide img {
+    height: 400px;
+    width: 100%;
+    border-radius: 12px;
+    object-fit: cover;
+}
+.slide-arrow {
+
+    position: absolute;
+  
+    display: flex;
+  
+    top: 0;
+  
+    bottom: 0;
+  
+    margin: auto;
+  
+    height: 4rem;
+  
+    background-color: white;
+  
+    border: none;
+  
+    width: 2rem;
+  
+    font-size: 3rem;
+  
+    padding: 0;
+  
+    cursor: pointer;
+  
+    opacity: 0.5;
+  
+    transition: opacity 100ms;
+  
+  }
+  
+  .slide-arrow:hover,
+  
+  .slide-arrow:focus {
+  
+    opacity: 1;
+  
+  }
+  
+  #slide-arrow-prev {
+  
+    left: 0;
+  
+    padding-left: 0.25rem;
+  
+    border-radius: 0 2rem 2rem 0;
+  
+  }
+  
+  #slide-arrow-next {
+  
+    right: 0;
+  
+    padding-left: 0.75rem;
+  
+    border-radius: 2rem 0 0 2rem;
+  
+  }
+
+/* .slides-container {
+    scrollbar-width: none; 
+    -ms-overflow-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+}
+
+.slides-container::-webkit-scrollbar { 
+    width: 0;
+    height: 0;
+}  */
+
 
 /* Slider Home Page */
-.slider-container {
+/* .slider-container {
     max-height: 100vh;
     height: 600px;
     max-width: 100vw;
@@ -219,7 +333,7 @@ nav a {
 .slider-button:hover {
     color: var(--white);
     opacity: 100%;
-}
+} */
 
 /* Fact sections homepage */
 
@@ -270,8 +384,8 @@ nav a {
 .main-container img {
     max-width: 500px;
     width: 50%;
-
 }
+
 
 /* Footer */
 
