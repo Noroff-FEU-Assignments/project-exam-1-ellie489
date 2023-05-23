@@ -1,9 +1,32 @@
-const url = "https://exam.squareeyes-project.no/wp-json/wp/v2/posts?_embed";
+// const baseUrl = "https://exam.squareeyes-project.no/wp-json/wp/v2/posts?_embed&?per_page=50";
+// let baseUrl = "https://exam.squareeyes-project.no/wp-json/wp/v2/posts?_embed&per_page=10";
+let baseUrl = "https://exam.squareeyes-project.no/wp-json/wp/v2/posts?_embed&page=1";
+const mediaUrl = "https://exam.squareeyes-project.no/wp-json/wp/v2/media";
+// const fullUrl = baseUrl + "?_embed";
+
+const showMore = document.querySelector(".show-more");
+
+showMore.addEventListener ("click", () => {
+    baseUrl = "https://exam.squareeyes-project.no/wp-json/wp/v2/posts?_embed&page=2";
+    renderPosts();
+    showMore.style.display = "none";
+}) 
+
+async function getMedia() {
+    try {
+        const response = await fetch(mediaUrl);
+        const images = await response.json();
+        return images;
+    }
+    catch(error) {
+        console.log("There was an error" + error);
+    }
+}
 
 async function getBlogPosts() {
 
     try {
-      const response = await fetch(url);
+      const response = await fetch(baseUrl);
       const blogPosts = await response.json();
       return blogPosts;
     }
