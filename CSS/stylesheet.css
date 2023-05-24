@@ -537,7 +537,7 @@ textarea {
     left: 0;
   }
 
-  .hero {
+  .home.hero {
     background-image: url("/images/header-mobile.jpg");
     align-items: center;
     max-height: 90vh;
@@ -562,18 +562,6 @@ textarea {
     padding: 10px;
   }
 
-  .slide {
-    width: 90%;
-    margin: 0;
-  }
-
-  .slider-button.prev {
-    left: 1rem;
-  }
-  .slider-button.next {
-    right: 1rem;
-  }
-
   .main {
     max-width: 90vw;
   }
@@ -584,7 +572,7 @@ textarea {
   }
   .container {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     grid-template-rows: 50vh;
     gap: 20px;
     justify-content: center;
@@ -611,14 +599,15 @@ textarea {
   }
 
   .slider-wrapper {
-    width: 90vw;
+    width: 100vw;
     margin: auto;
   }
 
   .slide {
-    max-width: 90vw;
+    width: 90vw;
+    padding: 0px 20px;
     max-height: 90vh;
-    margin: 2rem 20px;
+    margin: auto;
   }
 
   .slide img {

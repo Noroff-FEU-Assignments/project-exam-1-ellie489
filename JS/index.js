@@ -1,6 +1,3 @@
-// const slides = document.querySelectorAll(".slide");
-// const nextSlide = document.querySelector(".slider-button.next");
-// const prevSlide = document.querySelector(".slider-button.prev");
 const url = "https://exam.squareeyes-project.no/wp-json/wp/v2/posts?_embed";
 const slidesContainer = document.getElementById("slides-container");
 const slide = document.querySelector(".slide");
@@ -69,39 +66,5 @@ async function renderPosts() {
     slidesContainer.scrollLeft -= slideWidth;
   
   });
-
-  factText.addEventListener("click", (event) => {
-    factText.style.display = "none";
-});
-
-
-// slides.forEach((slide, index) => {
-//   slide.style.transform = `translateX(${index * 100}%)`;
-// });
-
-// nextSlide.addEventListener("click", function () {
-//   if (currentSlide === maxSlide) {
-//     currentSlide = 0;
-//   } else {
-//     currentSlide++;
-//   };
-
-// slides.forEach((slide, index) => {
-//  slide.style.transform = `translateX(${100 * (index - currentSlide)}%)`;
-// });
-// });
-
-// prevSlide.addEventListener("click", function () {
-//   if (currentSlide === 0) {
-//     currentSlide = maxSlide;
-//   } else {
-//     currentSlide--;
-//   }
-
-//   slides.forEach((slide, index) => {
-//     slide.style.transform = `translateX(${100 * (index - currentSlide)}%)`;
-//   });
-// });
-
 
 renderPosts();
