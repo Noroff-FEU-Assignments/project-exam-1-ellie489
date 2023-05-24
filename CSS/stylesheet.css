@@ -54,8 +54,17 @@ a {
 
 .top {
     font-size: 2rem;
+    padding: 30px 0px;
+    margin: auto;
 }
 
+.space {
+    height: 10vh;
+}
+
+img {
+    border-radius: 12px;
+}
 
 main {
     display: flex;
@@ -63,6 +72,13 @@ main {
     justify-content: center;
     max-width: 1000px;
     margin: auto;
+    padding: 0px 0.5rem;
+}
+
+
+.more a {
+    display: flex;
+    align-items: center;
 }
 
 /* NAV */
@@ -131,25 +147,26 @@ nav a {
     width: 500px;
     height: 150px;
     border-radius: var(--border-radius);
+    cursor: pointer;
 }
 
 /* Hover States */
-.hero-cta:hover, nav a:hover, .cta:hover {
+.hero-cta:hover, nav a:hover, .cta:hover, .container *:hover, .slide:hover, .more a:hover {
     text-decoration: underline;
     opacity: 100%;
 }
 
-.button:hover {
+.button:hover, .show-more:hover,.container img:hover, .slide img:hover {
     box-shadow: 7px 7px 9px var(--dark);
     cursor: pointer;
-    
+    transition: ease-in-out 0.15s;
 }
 
 /* Slider */
 
 .slider-wrapper {
     margin: 1rem;
-    padding-top: 200px;
+    padding-top: 100px;
     position: relative;
     overflow: hidden;
   }
@@ -170,7 +187,6 @@ nav a {
   
 .slider-wrapper {
     width: 100%;
-    max-width: 100vw;
 }
 .slide {
     max-width: 400px;
@@ -187,33 +203,19 @@ nav a {
 .slide-arrow {
 
     position: absolute;
-  
     display: flex;
-  
-    top: 0;
-  
-    bottom: 0;
-  
+    top: 60%;
     margin: auto;
-  
-    height: 4rem;
-  
-    background-color: white;
-  
+    height: 3rem;
+    background-color: var(--white);
+    color: var(--blue);
     border: none;
-  
-    width: 2rem;
-  
+    width: 3rem;
     font-size: 3rem;
-  
     padding: 0;
-  
     cursor: pointer;
-  
-    opacity: 0.5;
-  
+    opacity: 60%;
     transition: opacity 100ms;
-  
   }
   
   .slide-arrow:hover,
@@ -227,9 +229,7 @@ nav a {
   #slide-arrow-prev {
   
     left: 0;
-  
     padding-left: 0.25rem;
-  
     border-radius: 0 2rem 2rem 0;
   
   }
@@ -237,9 +237,7 @@ nav a {
   #slide-arrow-next {
   
     right: 0;
-  
     padding-left: 0.75rem;
-  
     border-radius: 2rem 0 0 2rem;
   
   }
@@ -363,9 +361,10 @@ nav a {
 .about.hero {
     background-image: url("/images/about-hero.jpg");
     height: 500px;
+    max-height: 60vh;
 }
 
-.about.button {
+.about.button, .contact.button {
     background-color: var(--blue);
     width: 200px;
     height: 50px;
@@ -375,23 +374,46 @@ nav a {
     font-size: 1rem;
 }
 
-/* All Blogs Page */ 
-.main-container {
+h1, h2 {
     display: flex;
-    flex-direction: row;
+    align-items: center;
 }
 
-.main-container img {
-    max-width: 500px;
-    width: 50%;
+/* All Blogs Page */ 
+
+.container img {
+    height: 300px;
+    width: 100%;
+    border-radius: 12px;
+    object-fit: cover;
 }
 
 
+.container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 500px;
+        gap: 20px;
+        justify-content: center;
+        text-transform: capitalize;
+        max-width: 100%;
+        margin: auto;
+        font-size: 1.2em;
+        flex-wrap: wrap;
+}
 /* Footer */
-
+.social-media {
+    display: flex;
+}
 footer {
     height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
+
+
 
 footer a {
     color: var(--blue);
@@ -403,6 +425,58 @@ footer a {
     justify-content: center;
 }
 
+/* Contact Page */
+input,textarea {
+    border-radius: 6px;
+    padding: 0.5rem;
+    max-width: 1000px;
+    font-size: 1.2rem;
+  }
+
+  .form-container {
+    display:flex;
+    flex-direction: column;
+    max-width: 500px;
+    padding: 20px;
+  }
+
+  .contact.button, .show-more {
+    background-color: var(--blue);
+    width: 120px;
+    height: 50px;
+    border: 0;
+    border-radius: 8px;
+    color: var(--white);
+    font-size: 1.2rem;
+    margin: auto;
+  }
+  .success {
+    padding: 20px;
+    font-size: 1.5rem;
+  }
+
+  .form-error {
+    color: rgb(194, 6, 6);
+    margin-bottom: 10px;
+  }
+  
+/* Blog Post Page */
+.details-container {
+    max-width: 1000px;
+    display: flex;
+    justify-content: center;
+    text-align: left;
+}
+
+.details-container img {
+    height: 100%;
+    width: 400px;
+    object-fit: cover;
+}
+
+.modal {
+    transform: scale(3);
+}
 
 @media only screen and (max-width: 768px) {
 
@@ -518,6 +592,21 @@ footer a {
     .fact.text {
         top: 10%;
         left: 20%;
+    }
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 50vh;
+        gap: 20px;
+        justify-content: center;
+        text-transform: capitalize;
+        max-width: 90vw;
+        margin: auto;
+        font-size: 1rem;
+        flex-wrap: wrap;
+    }
+    .container img {
+        height: 30vh;
     }
     
 }

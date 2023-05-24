@@ -58,7 +58,7 @@ async function renderPosts() {
       image.src = post._embedded["wp:featuredmedia"][0].source_url;
       image.alt = post._embedded["wp:featuredmedia"][0].alt_text;
       title.innerText = post.title.rendered;
-      link.append(title, image);
+      link.append(image, title);
       postContainer.append(link);
       container.append(postContainer);
       }
