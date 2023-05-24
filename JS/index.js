@@ -31,7 +31,8 @@ async function renderPosts() {
 
     posts.forEach( post => {
       const slider = document.querySelector(".slides-container");
-      slider.classList.remove("loader");
+      const loader = document.querySelector(".loader");
+      loader.style.display = "none";
       const slide = document.createElement("li");
       slide.className = "slide";
       const link = document.createElement("a");

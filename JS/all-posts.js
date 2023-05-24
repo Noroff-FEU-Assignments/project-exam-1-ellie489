@@ -7,7 +7,6 @@ const mediaUrl = "https://exam.squareeyes-project.no/wp-json/wp/v2/media";
 const showMore = document.querySelector(".show-more");
 
 showMore.addEventListener ("click", () => {
-    showMore.className = "loader";
     baseUrl = "https://exam.squareeyes-project.no/wp-json/wp/v2/posts?_embed&page=2";
     renderPosts();
     showMore.style.display = "none";

@@ -78,13 +78,13 @@ img {
 }
 
 .loader {
-  border: 0.5rem dotted #49ad99;
-  border-bottom: 0.5rem dotted #8deac8;
+  border: 0.5rem dotted var(--blue);
+  border-bottom: 0.5rem dotted var(--blue);
   border-radius: 50%;
   width: 3rem;
   height: 3rem;
   animation: spin 2s linear infinite;
-  margin: 40px;
+  margin: auto;
 }
 
 @keyframes spin {
@@ -570,6 +570,25 @@ textarea {
     top: 10%;
     left: 20%;
   }
+
+  .details-container div {
+    max-width: 90vw;
+  }
+
+  .details-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 2;
+  }
+  .details-container h1 {
+    line-height: 1.5;
+    font-size: 1.8rem;
+  }
+  .details-container figure {
+    margin: auto;
+  }
+
   .container {
     display: grid;
     grid-template-columns: 1fr;
@@ -595,7 +614,12 @@ textarea {
     top: 1;
     left: 0;
     max-width: 90vw;
-    width: 500px;
+    position: relative;
+    padding: 0;
+    margin: 0;
+  }
+  .fact img {
+    height: 50vh;
   }
 
   .slider-wrapper {
