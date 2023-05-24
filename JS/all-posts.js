@@ -7,6 +7,7 @@ const mediaUrl = "https://exam.squareeyes-project.no/wp-json/wp/v2/media";
 const showMore = document.querySelector(".show-more");
 
 showMore.addEventListener ("click", () => {
+    showMore.className = "loader";
     baseUrl = "https://exam.squareeyes-project.no/wp-json/wp/v2/posts?_embed&page=2";
     renderPosts();
     showMore.style.display = "none";
@@ -48,6 +49,7 @@ async function renderPosts() {
 
     posts.forEach( post => {
       const container = document.querySelector(".main-container");
+      container.classList.remove("loader");
       const postContainer = document.querySelector(".container");
       const link = document.createElement("a");
       link.href = "blog-post.html?id=" + post.id;

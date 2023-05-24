@@ -6,6 +6,8 @@ const slidesContainer = document.getElementById("slides-container");
 const slide = document.querySelector(".slide");
 const prevButton = document.getElementById("slide-arrow-prev");
 const nextButton = document.getElementById("slide-arrow-next");
+const factText = document.querySelector(".fact.text");
+
 
 async function getBlogPosts() {
 
@@ -31,10 +33,8 @@ async function renderPosts() {
   function createPost(posts) {
 
     posts.forEach( post => {
-    //   const sliderContainer = document.querySelector(".slider-container");
-    //   const slider = document.createElement("div");
-    //   slider.className = "slider";
       const slider = document.querySelector(".slides-container");
+      slider.classList.remove("loader");
       const slide = document.createElement("li");
       slide.className = "slide";
       const link = document.createElement("a");
@@ -49,17 +49,16 @@ async function renderPosts() {
       link.append(image, title);
       slide.append(link);
       slider.append(slide);
-    //   sliderContainer.append(slide);
+
       }
     )
   }
 
 
-  nextButton.addEventListener("click", (event) => {
+  nextButton.addEventListener("click", () => {
+    const slideWidth = slide.clientWidth;
 
-    // const slideWidth = slide.clientWidth;
-  
-      slidesContainer.scrollLeft += 500;
+    slidesContainer.scrollLeft += slideWidth;
   
   });
 
@@ -67,10 +66,14 @@ async function renderPosts() {
 
     const slideWidth = slide.clientWidth;
   
-    slidesContainer.scrollLeft -= 500;
+    slidesContainer.scrollLeft -= slideWidth;
   
   });
-  
+
+  factText.addEventListener("click", (event) => {
+    factText.style.display = "none";
+});
+
 
 // slides.forEach((slide, index) => {
 //   slide.style.transform = `translateX(${index * 100}%)`;

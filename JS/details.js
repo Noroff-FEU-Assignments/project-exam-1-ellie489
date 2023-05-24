@@ -27,6 +27,7 @@ async function getBlogDetails() {
 function createPost(blogPost) {
     docTitle(`Northern Vibes | ${blogPost.title.rendered}`);
     const container = document.querySelector(".details-container");
+    container.classList.remove("loader");
     const postContainer = document.createElement("div");
     const title = document.createElement("h1");
     const content = document.createElement("div");
@@ -37,7 +38,7 @@ function createPost(blogPost) {
 
     postContainer.append(title, content);
     container.append(postContainer);
-    
+
 }
 
 async function renderBlogPost() {
