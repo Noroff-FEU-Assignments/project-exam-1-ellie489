@@ -168,19 +168,16 @@ nav a:hover,
   scroll-behavior: smooth;
 }
 
-.slide {
-  height: 100%;
-  flex: 1 0 100%;
-}
-
 .slider-wrapper {
   width: 90%;
 }
 
 .slide {
+  height: 100%;
+  flex: 1 0 100%;
   max-width: 300px;
   max-height: 90vh;
-  margin: 100px 20px;
+  margin: 20px 20px 100px 20px;
 }
 
 .slide img {
@@ -515,6 +512,7 @@ img,
 
   .hamburger {
     display: block;
+    padding-right: 1.5rem;
   }
 
   .hamburger.active .bar:nth-child(2) {
@@ -621,7 +619,7 @@ img,
   .contact.button,
   .hero-cta {
     width: 15rem;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
   .fact.text {
     top: 1;
@@ -636,16 +634,21 @@ img,
   .slider-wrapper {
     width: 100vw;
     margin: auto;
+    max-height: 90vh;
   }
 
   .slide {
-    width: 90vw;
-    padding: 0px 20px;
     max-height: 90vh;
+    max-width: 90vw;
     margin: auto;
+    padding: 0px 20px;
   }
-
   .slide img {
-    height: 50vh;
+    max-height: 50vh;
+  }
+  .slide-arrow {
+    height: 4rem;
+    width: 4.5rem;
+    font-size: 3.5rem;
   }
 }
