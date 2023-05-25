@@ -543,12 +543,16 @@ textarea {
 
   .hero-cta {
     background-color: var(--black);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     color: var(--white);
     opacity: 100%;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     height: 120px;
-    max-width: 300px;
-    border-radius: 1.5rem;
+    max-width: 60vw;
+    border-radius: 1rem;
     font-weight: 200;
   }
   .cta {
