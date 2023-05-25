@@ -33,7 +33,7 @@
 
   <body>
     <header>
-      <nav class="navbar">
+      <nav class="navbar flex">
         <a
           href="index.html"
           class="logo"
@@ -41,13 +41,13 @@
           >Northern Vibes</a
         >
         <ul class="menu flex">
-          <li class="menu-item">
+          <li class="menu-item mobile-flex">
             <a href="about.html">about</a>
           </li>
-          <li class="menu-item">
+          <li class="menu-item mobile-flex">
             <a href="all-posts.html">All Posts</a>
           </li>
-          <li class="menu-item">
+          <li class="menu-item mobile-flex">
             <a href="contact.html">contact</a>
           </li>
         </ul>
@@ -58,39 +58,44 @@
         </div>
       </nav>
     </header>
-    <div class="contact hero"></div>
-    <main class="contact-page">
+    <div class="contact hero flex center"></div>
+    <main class="contact-page flex center">
       <h1><i class="fa-solid fa-phone icon"></i>Contact Us</h1>
-      <div class="form-container">
+      <div class="form-container flex center">
         <p id="form-message"></p>
         <form class="contact-form">
           <div class="form-field">
             <label for="firstname">Name:</label>
-            <input type="text" name="name" id="firstname" class="name-input" />
+            <input
+              type="text"
+              name="name"
+              id="firstname"
+              class="name-input flex"
+            />
             <div class="form-error"></div>
           </div>
           <div class="form-field">
             <label for="email" class="form-label">Email:</label>
-            <input type="text" id="email" class="email-input" />
+            <input type="text" id="email" class="email-input flex" />
             <div class="form-error"></div>
           </div>
           <div class="form-field">
             <label for="subject" class="form-label">Subject:</label>
-            <input type="text" id="subject" class="subject-input" />
+            <input type="text" id="subject" class="subject-input flex" />
             <div class="form-error"></div>
           </div>
           <div class="form-field">
             <label for="message" class="form-label">Message:</label>
-            <textarea id="message" class="message-input"></textarea>
+            <textarea id="message" class="message-input flex"></textarea>
             <div class="form-error"></div>
           </div>
-          <button type="submit" class="contact button">Send</button>
+          <button type="submit" class="contact button flex center">Send</button>
         </form>
       </div>
     </main>
     <hr />
-    <footer>
-      <div class="social-media">
+    <footer class="flex center">
+      <div class="flex">
         <a aria-label="Follow us on Facebook" href="https://www.facebook.com/"
           ><i class="fa-brands fa-facebook"></i>
         </a>
