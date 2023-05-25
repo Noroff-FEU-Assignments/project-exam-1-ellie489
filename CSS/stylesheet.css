@@ -333,7 +333,8 @@ nav a:hover,
 }
 
 h1,
-h2 {
+h2,
+h3 {
   display: flex;
   align-items: center;
 }

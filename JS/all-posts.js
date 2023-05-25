@@ -54,7 +54,7 @@ async function renderPosts() {
       link.href = "blog-post.html?id=" + post.id;
       link.id = post.id;
       const image = document.createElement("img");
-      const title = document.createElement("h3");
+      const title = document.createElement("h2");
   
       image.src = post._embedded["wp:featuredmedia"][0].source_url;
       image.alt = post._embedded["wp:featuredmedia"][0].alt_text;
