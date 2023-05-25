@@ -46,17 +46,10 @@ a {
 }
 
 .icon {
-  background-color: var(--blue);
-  display: flex;
-  border-radius: 50%;
-  width: 3.5rem;
-  height: 3.5rem;
-  color: var(--white);
-  justify-content: center;
-  align-items: center;
-  font-size: 1.6rem;
-  margin: auto;
+  color: var(--blue);
+  font-size: 2rem;
 }
+
 .icon.link {
   margin: 1rem;
 }
