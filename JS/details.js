@@ -18,10 +18,15 @@ function docTitle(title) {
 
 
 async function getBlogDetails() {
-    const response = await fetch(fullURL);
-    const postData = await response.json();
-    return postData;
-}
+    try {
+        const response = await fetch(fullURL);
+        const postData = await response.json();
+        return postData;
+    }
+    catch(error) {
+        console.log("There was an error" + error);
+      }
+    }
 
 
 function createPost(blogPost) {

@@ -6,9 +6,6 @@
   --padding: 20px;
   --dark: #081a1d;
 }
-* {
-  box-sizing: border-box;
-}
 body {
   padding: 0;
   margin: 0;
@@ -27,6 +24,10 @@ h5,
 h6 {
   text-transform: capitalize;
 }
+h5 {
+  font-size: 1rem;
+}
+
 ul {
   list-style: none;
   padding: 0;
@@ -107,7 +108,8 @@ main {
   padding: 0 1rem;
 }
 
-main p {
+main p,
+main h5 {
   max-width: 800px;
   line-height: 1.5;
 }
@@ -171,13 +173,15 @@ nav a {
   padding: 20px;
   font-size: 2.8rem;
   background-color: var(--white);
-  text-transform: uppercase;
   border: 0px;
   opacity: 70%;
   width: 500px;
   height: 150px;
   border-radius: var(--border-radius);
   cursor: pointer;
+}
+.hero-cta a {
+  text-transform: uppercase;
 }
 
 /* Hover States */
@@ -322,7 +326,8 @@ nav a:hover,
 }
 
 .about.button,
-.contact.button {
+.contact.button,
+.about.button a {
   background-color: var(--blue);
   width: 200px;
   height: 50px;
@@ -334,9 +339,12 @@ nav a:hover,
 
 h1,
 h2,
-h3 {
+h3,
+h4,
+h5 {
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 /* All Blogs Page */
@@ -358,7 +366,7 @@ h3 {
   width: 100%;
   max-width: 90vw;
   margin: auto;
-  font-size: 1.2em;
+  font-size: 1rem;
   flex-wrap: wrap;
 }
 /* Footer */

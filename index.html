@@ -1,66 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Welcome to Northern Vibes, a norwegian travel blog.">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Welcome to Northern Vibes, a norwegian travel blog."
+    />
     <title>Northern Vibes | Home</title>
-    <link href="css/stylesheet.css" rel="stylesheet"/>
-    <script src="https://kit.fontawesome.com/88b8d69470.js" crossorigin="anonymous"></script>
+    <link href="css/stylesheet.css" rel="stylesheet" />
+    <script
+      src="https://kit.fontawesome.com/88b8d69470.js"
+      crossorigin="anonymous"
+    ></script>
     <script src="JS/menu.js" defer></script>
     <script src="JS/index.js" defer></script>
     <!-- Hotjar Tracking Code for Project Exam 1 -->
-<script>
-    (function(h,o,t,j,a,r){
-        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
-        h._hjSettings={hjid:3504717,hjsv:6};
-        a=o.getElementsByTagName('head')[0];
-        r=o.createElement('script');r.async=1;
-        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+    <script>
+      (function (h, o, t, j, a, r) {
+        h.hj =
+          h.hj ||
+          function () {
+            (h.hj.q = h.hj.q || []).push(arguments);
+          };
+        h._hjSettings = { hjid: 3504717, hjsv: 6 };
+        a = o.getElementsByTagName("head")[0];
+        r = o.createElement("script");
+        r.async = 1;
+        r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
         a.appendChild(r);
-    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
-</script>
-</head>
-<body>
+      })(window, document, "https://static.hotjar.com/c/hotjar-", ".js?sv=");
+    </script>
+  </head>
+  <body>
     <header>
-        <a id="top"></a>
-        <nav class="navbar">
-            <a href="index.html" class="logo" aria-label="Go to Northern Vibes Homepage">Northern Vibes</a>
-            <ul class="menu flex">
-              <li class="menu-item">
-                <a href="about.html">about</a>
-              </li>
-              <li class="menu-item">
-                <a href="all-posts.html">All Posts</a>
-              </li>
-              <li class="menu-item">
-                <a href="contact.html">contact</a>
-              </li>
-            </ul>
-            <div class="hamburger">
-              <span class="bar"></span>
-              <span class="bar"></span>
-              <span class="bar"></span>
-            </div>
-          </nav>
-        <div class="home hero">
+      <a id="top"></a>
+      <nav class="navbar">
+        <a
+          href="index.html"
+          class="logo"
+          aria-label="Go to Northern Vibes Homepage"
+          >Northern Vibes</a
+        >
+        <ul class="menu flex">
+          <li class="menu-item">
+            <a href="about.html">about</a>
+          </li>
+          <li class="menu-item">
+            <a href="all-posts.html">All Posts</a>
+          </li>
+          <li class="menu-item">
+            <a href="contact.html">contact</a>
+          </li>
+        </ul>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </nav>
+      <div class="home hero">
         <h1>
-            <a href="all-posts.html"><button class="hero-cta">Are you ready to explore norway?</button></a></div>
+          <button class="hero-cta">
+            <a href="all-posts.html">Are you ready to explore norway?</a>
+          </button>
         </h1>
+      </div>
     </header>
-<main> 
-    <section>
+    <main>
+      <section>
         <div class="slider-wrapper">
-            <h2>Latest Posts</h2>
-                    <button aria-label="slide left arrow" class="slide-arrow" id="slide-arrow-prev"><i class="fa-solid fa-angle-left"></i></button>
-        <button aria-label="slide right arrow" class="slide-arrow" id="slide-arrow-next"><i class="fa-solid fa-angle-right"></i></button>
-          <div class="loader"></div><ul class="slides-container" id="slides-container">
+          <h2>Latest Posts</h2>
+          <button
+            aria-label="slide left arrow"
+            class="slide-arrow"
+            id="slide-arrow-prev"
+          >
+            <i class="fa-solid fa-angle-left"></i>
+          </button>
+          <button
+            aria-label="slide right arrow"
+            class="slide-arrow"
+            id="slide-arrow-next"
+          >
+            <i class="fa-solid fa-angle-right"></i>
+          </button>
+          <div class="loader"></div>
+          <ul class="slides-container" id="slides-container">
             <li class="slide" id="first-slide"></li>
           </ul>
         </div>
 
-        
         <!-- <div class="slider-container">
             <h2>Latest Posts</h2>
             <div class="slider">
@@ -70,53 +101,66 @@
             <button class="slider-button prev" id="prev"><i class="fa-solid fa-angle-left"></i></button>
             <button class="slider-button next" id="next"><i class="fa-solid fa-angle-right"></i></button>
         </div> -->
-
-    </section>   
-        <div class="fact">
-            <img src="images/fact-1.jpg" alt="Preikestolen fjords">
-            <div class="fact text">
-                <h4>Did you know?</h4>
-                <p>Norway is known for its beautiful fjords, but did you know that they were formed during the ice age, around 10,000 years ago?</p></div>
+      </section>
+      <div class="fact">
+        <img src="images/fact-1.jpg" alt="Preikestolen fjords" />
+        <div class="fact text">
+          <h4>Did you know?</h4>
+          <p>
+            Norway is known for its beautiful fjords, but did you know that they
+            were formed during the ice age, around 10,000 years ago?
+          </p>
         </div>
-        <div class="fact">
-            <img src="images/fact-2.jpg" alt="waterfall">
-            <div class="fact text">
-                <h4>Did you know?</h4>
-            <p>Norway has a unique tradition called "friluftsliv," which means "open-air living." </p><p>
-
-             It involves spending time in nature and enjoying outdoor activities.</p></div>
+      </div>
+      <div class="fact">
+        <img src="images/fact-2.jpg" alt="waterfall" />
+        <div class="fact text">
+          <h4>Did you know?</h4>
+          <p>
+            Norway has a unique tradition called "friluftsliv," which means
+            "open-air living."
+          </p>
+          <p>
+            It involves spending time in nature and enjoying outdoor activities.
+          </p>
         </div>
-        <section class="more">
-                <p>Learn more about who we are and discover the  places that brings thousands of people all the way to the north every year, or find the secret places that made us fall in love with Norway. </p>
-    <a href="about.html" class="flex align">
-        <div class="icon link flex "><i class="fa-solid fa-question"></i></div>
-        About Us
-    </a>
-    <a href="all-posts.html" class="flex align">
-        <div class="icon link flex"><i class="fa-solid fa-mountain"></i></div>
-        All Blogs
-    </a>
-    <a href="contact.html" class="flex align">
-        <div class="icon link flex"><i class="fa-solid fa-phone"></i></div>
-        Contact Us
-    </a>
-
-        </section>      
-        <div class="top" aria-hidden="true" >
-        <ahref="#top"><i class="fa-solid fa-angles-up"></i></a>
-      </div>  
-</main>
-<hr>
-<footer>
-    <div class="social-media">
-      <a aria-label="Follow us on Facebook" href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i>
-      </a>
-      <a  aria-label="Follow us on Instagram" href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i>
-      </a>
-    </div>
-    <div id="copyright">
-      <p>Copyright 2023 <i class="fa-solid fa-copyright"></i></p>
-    </div>
-  </footer>
-</body>
+      </div>
+      <section class="more">
+        <h5>
+          Learn more about who we are and discover the places that brings
+          thousands of people all the way to the north every year, or find the
+          secret places that made us fall in love with Norway.
+        </h5>
+        <a href="about.html" class="flex align">
+          <div class="icon link flex"><i class="fa-solid fa-question"></i></div>
+          About Us
+        </a>
+        <a href="all-posts.html" class="flex align">
+          <div class="icon link flex"><i class="fa-solid fa-mountain"></i></div>
+          All Blogs
+        </a>
+        <a href="contact.html" class="flex align">
+          <div class="icon link flex"><i class="fa-solid fa-phone"></i></div>
+          Contact Us
+        </a>
+      </section>
+      <div class="top" aria-hidden="true">
+        <a href="#top"><i class="fa-solid fa-angles-up"></i></a>
+      </div>
+    </main>
+    <hr />
+    <footer>
+      <div class="social-media">
+        <a aria-label="Follow us on Facebook" href="https://www.facebook.com/"
+          ><i class="fa-brands fa-facebook"></i>
+        </a>
+        <a aria-label="Follow us on Instagram" href="https://www.instagram.com/"
+          ><i class="fa-brands fa-instagram"></i>
+        </a>
+      </div>
+      <div id="copyright">
+        <p>Copyright 2023 <i class="fa-solid fa-copyright"></i></p>
+      </div>
+    </footer>
+  </body>
 </html>
