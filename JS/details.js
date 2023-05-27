@@ -76,6 +76,7 @@ function createPost(blogPost) {
   images.forEach((img) => {
     img.addEventListener("click", (e) => {
       imgSrc = e.target.src;
+      imgAlt = e.target.alt;
       const modal = (document.querySelector(".modal").style.display = "block");
       const newImg = document.querySelector(".modal img");
       newImg.src = imgSrc;

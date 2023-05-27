@@ -339,11 +339,10 @@ textarea {
 }
 
 .details-container img {
-  height: auto;
+  max-height: 600px;
   max-width: 600px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   overflow: hidden;
-  cursor: pointer;
 }
 
 .modal {
@@ -362,7 +361,6 @@ textarea {
   top: 0;
   right: 1%;
   font-size: 3.5rem;
-  cursor: pointer;
   z-index: 101;
 }
 
@@ -376,7 +374,7 @@ textarea {
 }
 
 .details-container img:hover {
-  transform: scale(1.1);
+  transform: scale(1.03);
   transition: 0.3s;
 }
 /* Flex */
@@ -468,7 +466,9 @@ a,
 .hamburger,
 .hero-cta,
 .slide-arrow,
-.top {
+.top,
+.details-container img,
+.modal span {
   cursor: pointer;
 }
 /* Font Size */
@@ -676,7 +676,7 @@ img,
   }
 
   .slider-wrapper {
-    width: 100vw;
+    width: 90vw;
     margin: auto;
     max-height: 90vh;
   }
@@ -695,7 +695,9 @@ img,
     width: 4.5rem;
     font-size: 3.5rem;
   }
-  .modal img {
-    width: 95%;
+  .modal img,
+  .details-container,
+  .details-container img {
+    max-width: 90vw;
   }
 }
