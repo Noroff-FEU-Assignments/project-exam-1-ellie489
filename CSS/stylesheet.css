@@ -285,7 +285,7 @@ footer a {
 
 /* Contact Page */
 .contact.hero {
-  background-image: url("/images/contact-hero.jpg");
+  background-image: url("../images/contact-hero.jpg");
   height: 600px;
   max-height: 60vh;
   margin-bottom: 5rem;
