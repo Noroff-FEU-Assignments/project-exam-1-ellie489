@@ -32,47 +32,9 @@ function createPost(blogPost) {
   title.innerText = blogPost.title.rendered;
   postContainer.id = blogPost.id;
 
-  // Make modal
-
-  // const images = content.querySelectorAll("img");
-  // image.src = blogPost._embedded["wp:featuredmedia"][0].source_url;
-  // image.alt = blogPost._embedded["wp:featuredmedia"][0].alt_text;
-
-  // const images = content.querySelectorAll("img");
-  // let imgSrc;
-  // images.forEach((img) => {
-  //   img.addEventListener("click", (e) => {
-  //     imgSrc = e.target.src;
-  //     imgModal(imgSrc);
-  //   });
-  // imgModal.addEventListener("click", function () {
-  //   const modal = document.querySelector(".modal");
-  //   modal.style.display = "none";
-  // });
-
-  //   img.addEventListener("mouseleave", () => {
-  //     closeModal(imgSrc);
-  //   });
-  // });
-
-  // const images = content.querySelectorAll("img");
-  // let imgSrc;
-  // images.forEach((img) => {
-  //   img.addEventListener("click", (e) => {
-  //     imgSrc = e.target.src;
-  //     const modal = document.querySelector(".modal");
-  //     const newImg = document.createElement("img");
-  //     newImg.src = imgSrc;
-  //     newImg.style.position = "absolute";
-  //     modal.appendChild(newImg);
-
-  //     modal.addEventListener("click", () => {
-  //       modal.innerHTML = "";
-  //     });
-  //   });
-
   const images = content.querySelectorAll("img");
   let imgSrc;
+  let imgAlt;
   images.forEach((img) => {
     img.addEventListener("click", (e) => {
       imgSrc = e.target.src;
@@ -80,6 +42,7 @@ function createPost(blogPost) {
       const modal = (document.querySelector(".modal").style.display = "block");
       const newImg = document.querySelector(".modal img");
       newImg.src = imgSrc;
+      newImg.alt = imgAlt;
     });
     document.querySelector(".modal", ".modal span").onclick = () => {
       document.querySelector(".modal").style.display = "none";

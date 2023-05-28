@@ -335,6 +335,8 @@ textarea {
 }
 
 .details-container {
+  display: flex;
+  max-width: 1000px;
   flex-wrap: wrap;
 }
 
@@ -642,6 +644,9 @@ img,
   }
   .details-container figure {
     margin: auto;
+  }
+  .details-container img {
+    height: 300px;
   }
 
   .container {
