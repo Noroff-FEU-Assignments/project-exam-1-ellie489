@@ -85,6 +85,13 @@ Contents of the blog:
 -	Contact page.
 
 
+[Live Site](https://benevolent-moonbeam-578aa6.netlify.app)
+
+[Mobile Prototype](https://www.figma.com/proto/QS02EN07wTfc71SWLLhoHe/Project-Exam-1?page-id=32%3A916&type=design&node-id=32-924&viewport=133%2C323%2C0.13&scaling=scale-down&starting-point-node-id=32%3A924)
+
+[Desktop Prototype](https://www.figma.com/proto/QS02EN07wTfc71SWLLhoHe/Project-Exam-1?page-id=32%3A917&type=design&node-id=32-1515&viewport=304%2C381%2C0.03&scaling=min-zoom&starting-point-node-id=32%3A1515&show-proto-sidebar=1)
+
+
 ## Built With
 
 Tech Stack:
@@ -97,8 +104,6 @@ Tech Stack:
 - JavaScript
 
 ## Getting Started
-
-### [Live Site](https://benevolent-moonbeam-578aa6.netlify.app)
 
 ### Installing
 
